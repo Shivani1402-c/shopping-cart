@@ -1,5 +1,9 @@
 # React + TypeScript + Vite
 
+## Live Demo
+
+Check out the live demo here: [Live Demo](https://shopping-cart-one-delta-75.vercel.app/)
+
 ## 🛒 Shopping Cart
 
 This is a simple shopping cart application built using React and TypeScript. It allows users to add, remove, and manage items in their cart dynamically.
