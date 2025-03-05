@@ -7,10 +7,11 @@ import { ProductInt } from "../type/type";
 
 const Cart = () => {
   const [totalAmount, setTotalAmount] = useState(0);
-  const cart = useSelector((state: ProductInt[]) => state);
+  const cart = useSelector(
+    (state: { [key: string]: ProductInt[] }) => state.cart
+  );
 
   useEffect(() => {
-    console.log("Cart === ", cart);
     if (cart?.length > 0)
       setTotalAmount(
         cart.reduce((acc: any, curr: { price: any }) => acc + curr.price, 0)
